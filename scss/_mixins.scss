@@ -1,0 +1,11 @@
+/* =========== Application Mixins ======= */
+
+@mixin fixed-background($bg-size, $bg-attachment, $bg-width, $bg-padding) {
+  -webkit-background-size: $bg-size;
+  -moz-background-size: $bg-size;
+  background-size: $bg-size;
+  -o-background-size: $bg-size;
+  background-attachment: $bg-attachment;
+  width:$bg-width;
+  padding:$bg-padding;
+}

@@ -1,0 +1,25 @@
+
+/* =========== Application Footer ======= */
+
+
+footer{
+	
+	background-image:url('../images/footer-bg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:30px 10px;
+	.contact-detail{
+		margin-top:30px;
+		h2, a, p{
+			color:white;
+		}
+		.footer-address{
+			color:white;
+		}
+	}
+	.footer-logo{
+		padding:40px 0px;
+		text-align:right;
+	}
+}
+

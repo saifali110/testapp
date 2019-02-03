@@ -1,0 +1,55 @@
+<!-- Header -->
+
+<div ng-include="'partials/header.html'"></div>
+
+<!-- Content Sections -->
+
+<section>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div >
+            <h1 class="text-center">Photo Albums</h1>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="searchBox">
+                  <input type="text" class="form-control app-input" placeholder="Search by Name" ng-model="searchName.mission_name">
+                </div>
+                <ul class="cards">
+                  <li class="card-item" ng-repeat = "album in albums">
+                    <div ng-click="showAlbumPhotos(album.albumId)">
+                      <p class="pink-text"><strong>Album Id: {{album.albumId}}</strong></p>
+                      <img src="{{album.thumbnailUrl}}" alt="{{album.albumId}}">
+                    </div>  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+  </div>
+</section>
+
+<section >
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">{{uniqueAlbumId}}
+          <div ng-repeat = "album in albums">
+            <ul class="cards">
+                  <li class="card-item" ng-repeat = "album in albums">
+                      <div ng-click="showPhotoDetails(album.albumId)">
+                        <p class="pink-text"><strong>Album Id: {{album.albumId}}</strong></p>
+                        <img src="{{album.thumbnailUrl}}" alt="{{album.albumId}}">
+                      </div>
+                    </div>    
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+  </div>    
+</section>
+
+<!-- Footer -->
+<div ng-include="'partials/footer.html'"></div>
